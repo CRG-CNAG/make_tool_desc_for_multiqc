@@ -96,8 +96,12 @@ sub getVersion {
 	my %info = %{$infos};
 
 	if ($info{$tool}) {
-		$res = `$info{$tool}`;
-		$res =~ s/^\s+|\s+$//g
+	    if (system("$info{$tool}") == 0) {
+			$res = `$info{$tool}`;
+			$res =~ s/^\s+|\s+$//g
+		} else {
+			$res = "*** Tool $tool not installed";
+		}
 	}
 	else {
 		$res = "*** Tool $tool not recognized";
