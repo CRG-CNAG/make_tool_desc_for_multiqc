@@ -96,7 +96,7 @@ sub getVersion {
 	my %info = %{$infos};
 
 	if ($info{$tool}) {
-	    if (system("$info{$tool}") == 0) {
+	    if (system("$info{$tool} > /dev/null") == 0) {
 			$res = `$info{$tool}`;
 			$res =~ s/^\s+|\s+$//g
 		} else {
