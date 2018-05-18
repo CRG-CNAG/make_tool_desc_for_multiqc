@@ -14,4 +14,5 @@ bwa	bwa 2>&1|head -n 3|tail -n1| awk '{print "bwa "$2}'	'Li H Durbin R. Fast and
 nextflow	echo "Nextflow 0.27.2"	'Di Tommaso P Chatzou M Floden EW Barja PP Palumbo E Notredame C. Nextflow enables reproducible computational workflows. Nat Biotechnol. 2017 Apr 11;35(4):316-319.'
 bowtie	bowtie --version 2>&1|head -n 1|awk '{print "bowtie "$3}'	'Langmead B, Trapnell C, Pop M, Salzberg SL. Ultrafast and memory-efficient alignment of short DNA sequences to the human genome. Genome Biol. 2009;10(3):R25. doi: 10.1186/gb-2009-10-3-r25. Epub 2009 Mar 4. PubMed PMID: 19261174; PubMed Central PMCID: PMC2690996.'
 shortstack	ShortStack -v	"Axtell MJ. ShortStack: comprehensive annotation and quantification of small RNA genes. RNA. 2013 Jun;19(6):740-51. doi: 10.1261/rna.035279.112. Epub 2013 Apr 22. PubMed PMID: 23610128; PubMed Central PMCID: PMC3683909"
+salmon	salmon -v	"Patro R, Duggal G, Love MI, Irizarry RA, Kingsford C. Salmon provides fast and bias-aware quantification of transcript expression. Nat Methods. 2017 Apr;14(4):417-419"
 
